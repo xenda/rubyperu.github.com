@@ -17,8 +17,8 @@ curl -L get.rvm.io | bash -s stable
 source ~/.rvm/scripts/rvm
 
 echo "Instalando Ruby"
-rvm install 1.9.3-p194
-rvm use 1.9.3-p194 --default
+rvm install 2.1.1-p0
+rvm use 2.1.1-p0 --default
 
 gem install bundler --no-rdoc --no-ri
 gem install rails --no-rdoc --no-ri
@@ -33,9 +33,9 @@ echo -n "La versión de sqlite debería ser 3.7.3 o mayor: sqlite "
 sqlite3 --version
 echo -n "La versión de rvm es rvm 1.6.32 o mayor: "
 rvm --version | sed '/^.*$/N;s/\n//g' | cut -c 1-10
-echo -n "La versión de Ruby debería ser ruby 1.9.3p194: "
+echo -n "La versión de Ruby debería ser ruby 2.1.14: "
 ruby -v | -d " " -f 2
-echo -n "La versión de Rails debería ser Rails 3.2.3: "
+echo -n "La versión de Rails debería ser Rails 4.0: "
 rails -v
 echo -e "\n- - - - - -\n"
 
